@@ -15,13 +15,13 @@ Het doel van deze API is om een wagenpark te beheren. De API bevat de volgende f
 
 # Installatie
 
-Om de installatie zo makkelijk mogelijk te maken is er gebruik gemaakt van een In-Memory database, welke bij het opstarten van de API automatisch gevuld wordt met 100 voertuigen. Dit wordt gedaan met verschillende statussen, en indien de status 'uitgeleend' is wordt er een van de volgende namen willekeurig gekozen: Robert, Peter, Jan
-
 1. Clone de repository
 2. Open het project in Visual Studio
 3. Build de solution (let op dat .NET 5.0 geïnstalleerd is)
 4. Run de API
 5. Indien Swagger niet automatisch geopend wordt is deze hier te bereiken: https://localhost:44309/swagger/index.html
+
+Om de installatie zo makkelijk mogelijk te maken is er gebruik gemaakt van een In-Memory database, welke bij het opstarten van de API automatisch gevuld wordt met 100 voertuigen. Dit wordt gedaan met verschillende statussen, en indien de status 'uitgeleend' is wordt er een van de volgende namen willekeurig gekozen: Robert, Peter, Jan
 
 # Documentatie
 
