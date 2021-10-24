@@ -1,0 +1,53 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31729.503
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Src", "Src", "{B82DB17B-0066-47E3-B519-D29B472E9004}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{E89989B6-0A34-430C-9CAA-3BFAADB1A057}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SUREbusiness.FleetManagement.Api", "SUREbusiness.FleetManagement.Api\SUREbusiness.FleetManagement.Api.csproj", "{73BC87A3-2016-46D7-A118-5296059246B6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SUREbusiness.FleetManagement.BLL", "SUREbusiness.FleetManagement.BLL\SUREbusiness.FleetManagement.BLL.csproj", "{00AC4064-730A-48E3-B42A-9A32F03691D6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SUREbusiness.FleetManagement.DAL", "SUREbusiness.FleetManagement.DAL\SUREbusiness.FleetManagement.DAL.csproj", "{B5D09A21-1900-4E2B-991E-BAEF9892C5F6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SUREbusiness.FleetManagement.BLL.UnitTests", "SUREbusiness.FleetManagement.BLL.UnitTests\SUREbusiness.FleetManagement.BLL.UnitTests.csproj", "{80C69626-49C8-4975-8BD7-16A6CB2CAF5F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{73BC87A3-2016-46D7-A118-5296059246B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73BC87A3-2016-46D7-A118-5296059246B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73BC87A3-2016-46D7-A118-5296059246B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73BC87A3-2016-46D7-A118-5296059246B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00AC4064-730A-48E3-B42A-9A32F03691D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00AC4064-730A-48E3-B42A-9A32F03691D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00AC4064-730A-48E3-B42A-9A32F03691D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00AC4064-730A-48E3-B42A-9A32F03691D6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B5D09A21-1900-4E2B-991E-BAEF9892C5F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5D09A21-1900-4E2B-991E-BAEF9892C5F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5D09A21-1900-4E2B-991E-BAEF9892C5F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5D09A21-1900-4E2B-991E-BAEF9892C5F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80C69626-49C8-4975-8BD7-16A6CB2CAF5F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80C69626-49C8-4975-8BD7-16A6CB2CAF5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80C69626-49C8-4975-8BD7-16A6CB2CAF5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80C69626-49C8-4975-8BD7-16A6CB2CAF5F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{73BC87A3-2016-46D7-A118-5296059246B6} = {B82DB17B-0066-47E3-B519-D29B472E9004}
+		{00AC4064-730A-48E3-B42A-9A32F03691D6} = {B82DB17B-0066-47E3-B519-D29B472E9004}
+		{B5D09A21-1900-4E2B-991E-BAEF9892C5F6} = {B82DB17B-0066-47E3-B519-D29B472E9004}
+		{80C69626-49C8-4975-8BD7-16A6CB2CAF5F} = {E89989B6-0A34-430C-9CAA-3BFAADB1A057}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A500FC63-96E0-4743-B88D-49B3D403AFFA}
+	EndGlobalSection
+EndGlobal
