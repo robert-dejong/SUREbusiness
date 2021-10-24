@@ -27,14 +27,10 @@ namespace SUREbusiness.FleetManagement.BLL.Handlers
             var vehicleEntities = _vehicleRepository.GetAll();
 
             if(!string.IsNullOrEmpty(request.LoanedToFilter))
-            {
                 vehicleEntities = vehicleEntities.Where(entity => entity.LoanedTo == request.LoanedToFilter);
-            }
 
             if (!string.IsNullOrEmpty(request.StatusFilter))
-            {
                 vehicleEntities = vehicleEntities.Where(entity => entity.Status == request.StatusFilter);
-            }
 
             int totalVehicles = vehicleEntities.Count();
 

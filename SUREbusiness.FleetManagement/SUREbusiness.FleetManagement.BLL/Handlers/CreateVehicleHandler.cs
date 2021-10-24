@@ -18,7 +18,11 @@ namespace SUREbusiness.FleetManagement.BLL.Handlers
         private readonly IValidator<Vehicle> _validator;
         private readonly IVehicleLicensePlateExistsService _vehicleLicensePlateExistsService;
 
-        public CreateVehicleHandler(IVehicleRepository vehicleRepository, IMapper mapper, IValidator<Vehicle> validator, IVehicleLicensePlateExistsService vehicleLicensePlateExistsService)
+        public CreateVehicleHandler(
+            IVehicleRepository vehicleRepository, 
+            IMapper mapper, 
+            IValidator<Vehicle> validator, 
+            IVehicleLicensePlateExistsService vehicleLicensePlateExistsService)
         {
             _vehicleRepository = vehicleRepository;
             _mapper = mapper;
@@ -31,17 +35,13 @@ namespace SUREbusiness.FleetManagement.BLL.Handlers
             var vehicleExists = await _vehicleLicensePlateExistsService.Exists(request.LicensePlate);
 
             if (!vehicleExists)
-            {
                 return new BaseResult<Vehicle>(error: $"License plate {request.LicensePlate} does not exist at RDW open data");
-            }
 
             var vehicle = _mapper.Map<Vehicle>(request);
             var validator = await _validator.ValidateAsync(vehicle);
 
             if (!validator.IsValid)
-            {
                 return new BaseResult<Vehicle>(validator.Errors);
-            }
 
             var vehicleEntity = _mapper.Map<VehicleEntity>(vehicle);
             var createdVehicleEntity = await _vehicleRepository.Add(vehicleEntity);

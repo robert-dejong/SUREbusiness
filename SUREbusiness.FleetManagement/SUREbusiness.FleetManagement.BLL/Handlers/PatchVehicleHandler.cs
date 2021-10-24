@@ -35,9 +35,7 @@ namespace SUREbusiness.FleetManagement.BLL.Handlers
             var validatePatch = new PatchVehicleValidator(vehicle).Validate(vehiclePatchModel);
 
             if (!validatePatch.IsValid)
-            {
                 return new BaseResult<Vehicle>(validatePatch.Errors);
-            }
 
             vehicle.LoanedTo = vehiclePatchModel.LoanedTo;
             vehicle.Status = vehiclePatchModel.Status;
@@ -45,9 +43,7 @@ namespace SUREbusiness.FleetManagement.BLL.Handlers
             var validator = await _validator.ValidateAsync(vehicle);
 
             if (!validator.IsValid)
-            {
                 return new BaseResult<Vehicle>(validator.Errors);
-            }
 
             var vehicleToUpdate = _mapper.Map<VehicleEntity>(vehicle);
             _ = await _vehicleRepository.Update(vehicleToUpdate);
