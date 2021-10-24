@@ -15,7 +15,7 @@ Het doel van deze API is om een wagenpark te beheren. De API bevat de volgende f
 
 # Installatie
 
-Om de installatie zo makkelijk mogelijk te maken is er gebruik gemaakt van een In-Memory database, welke bij het opstarten van de API automatisch gevuld wordt met 100 voertuigen.
+Om de installatie zo makkelijk mogelijk te maken is er gebruik gemaakt van een In-Memory database, welke bij het opstarten van de API automatisch gevuld wordt met 100 voertuigen. Dit wordt gedaan met verschillende statussen, en indien de status 'uitgeleend' is wordt er een van de volgende namen willekeurig gekozen: Robert, Peter, Jan
 
 1. Clone de repository
 2. Open het project in Visual Studio
@@ -39,7 +39,7 @@ Dit endpoint haalt standaard alle voertuigen op. Daarnaast is er de mogelijk om 
 
 ```pageSize``` Het aantal voertuig per pagina om op te halen. Deze moet in combinatie met de parameter 'page' gebruikt worden.
 
-```status``` Hiermee kun je filteren op een bepaalde status. De mogelijke statussen: 'uitgeleend', 'beschikbaar', 'in reparatie', 'verkocht', 'in bestelling'
+```status``` Hiermee kun je filteren op een bepaalde status. De mogelijke statussen zijn: 'uitgeleend', 'beschikbaar', 'in reparatie', 'verkocht', 'in bestelling'
 
 ```loanedTo``` Hiermee kun je filteren op de persoon aan wie een voertuig uitgeleend is. De database wordt standaard gevuld met 3 mogelijke namen: Robert, Peter, Jan
 
